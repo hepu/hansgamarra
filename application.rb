@@ -11,6 +11,7 @@ class Application < Sinatra::Base
   configure do
     assets.append_path File.join(root, 'assets', 'stylesheets')
     assets.append_path File.join(root, 'assets', 'javascripts')
+    assets.append_path File.join(root, 'bower_components', 'jquery', 'dist')
 
     Sprockets::Helpers.configure do |config|
       config.environment = assets
