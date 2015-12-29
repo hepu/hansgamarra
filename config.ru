@@ -2,7 +2,7 @@ require 'rack/cache'
 require 'sprockets'
 require './application'
 
-use Rack::Cache
+# use Rack::Cache
 
 map '/assets' do
   run Application.assets
