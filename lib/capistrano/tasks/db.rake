@@ -24,7 +24,7 @@ namespace :db do
   task :migrate do
     on roles(:web) do
       within current_path do
-        execute :bundle, :exec, 'rake db:migrate'
+        execute :bundle, :exec, 'rake db:migrate RAILS_ENV='+fetch(:rails_env)
       end
     end
   end

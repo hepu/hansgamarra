@@ -3,7 +3,7 @@
 set :deploy_to, '/var/www/hansgamarra'
 set :rails_env, 'production'
 set :puma_config, 'config/puma-production.rb'
-set :puma_pid, '/var/run/puma_production.pid'
+set :puma_pid, '/var/run/hansgamarra_production.pid'
 
 server 'hansgamarra.com', user: 'root', roles: %w{web app db}
 
