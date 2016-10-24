@@ -2,34 +2,29 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">
-        Hans
+        Hans Gamarra
       </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li class="active">
-          <a href="#">
-            Web Development
-          </a>
-        </li>
-        <li class="">
-          <a href="#">
-            Music
-          </a>
-        </li>
-        <li class="">
-          <a href="#">
-            Contact
-          </a>
-        </li>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a href="#">
-            Social Networks links
-          </a>
+          <%= link_to fa_icon('facebook-official'), @links[:facebook], target: :new %>
+          <%= link_to fa_icon('instagram'), @links[:instagram], target: :new %>
+          <%= link_to fa_icon('linkedin'), @links[:linkedin], target: :new %>
+          <%= link_to fa_icon('github'), @links[:github], target: :new %>
+          <%= link_to fa_icon('youtube'), @links[:youtube], target: :new %>
+          <%= link_to fa_icon('envelope'), 'mailto:hans.gamarra1303@gmail.com', target: :new %>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

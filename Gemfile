@@ -8,6 +8,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'puma', '2.15.3'
 gem 'bootstrap-sass', '3.3.6'
+gem "font-awesome-rails", '4.6.3.1'
+gem 'gravatar_image_tag', '1.2.0'
 
 group :development, :test do
   gem 'byebug'
