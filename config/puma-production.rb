@@ -4,6 +4,6 @@
 
 environment 'production'
 daemonize
-pidfile '/var/run/hansgamarra_production.pid'
-bind 'unix:///var/run/hansgamarra.sock'
-stdout_redirect '/var/www/hansgamarra/current/log/production.log', '/var/www/hansgamarra/current/log/production.log', true
+pidfile '/home/ubuntu/pids/hansgamarra.pid'
+bind 'unix:///home/ubuntu/sockets/hansgamarra.sock'
+stdout_redirect '/home/ubuntu/repos/hansgamarra/current/log/production.log', '/home/ubuntu/repos/hansgamarra/current/log/production.log', true

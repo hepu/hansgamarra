@@ -13,14 +13,14 @@ gem 'gravatar_image_tag', '1.2.0'
 
 group :development, :test do
   gem 'byebug'
-  gem 'capistrano', '3.4.0'
-  gem 'capistrano-rails', '1.1.3'
-  gem 'capistrano-bundler', '1.1.4'
+  gem 'capistrano', '3.8.1'
+  gem 'capistrano-rails', '1.2.3'
+  gem 'capistrano-bundler', '1.2.0'
   gem 'capistrano-rvm', '0.1.2'
   gem 'highline', '1.7.2'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
-  gem 'spring'
+  gem 'spring', '2.0.1'
 end

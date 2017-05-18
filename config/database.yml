@@ -18,5 +18,5 @@ production:
   <<: *default
   adapter: postgresql
   database: hansgamarra_production
-  username: hansgamarra
+  username: <%= ENV['HANSGAMARRA_DB_USERNAME'] %>
   password: <%= ENV['HANSGAMARRA_DB_PASSWORD'] %>
