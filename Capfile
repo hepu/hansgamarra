@@ -31,6 +31,7 @@ install_plugin Capistrano::SCM::Git
 #
 require "capistrano/rvm"
 require "capistrano/bundler"
+require 'capistrano/rails/assets'
 # require 'new_relic/recipes'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
