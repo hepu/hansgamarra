@@ -1,3 +1,4 @@
+<%= render partial: 'changing_bg' %>
 <div class="row menu-separator">
   <div id="music" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
     <div class="panel panel-default">
@@ -7,8 +8,8 @@
         </h3>
       </div>
       <div class="panel-body">
-        <%= link_to @links[:the_crankers], target: :new do %>
-          <%= image_tag 'tc_logo.png', class: 'img-responsive' %>
+        <%= link_to @links[:los_crankers], target: :new do %>
+          <%= image_tag 'lc_logo_white.png', class: 'img-responsive', width: 300 %>
         <% end %>
       </div>
     </div>

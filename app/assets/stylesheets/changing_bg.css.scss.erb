@@ -1,0 +1,44 @@
+.changing-bg-container {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  -webkit-transition: all 1.61833989s ease;
+  -moz-transition: all 1.61833989s ease;
+  -ms-transition: all 1.61833989s ease;
+  -o-transition: all 1.61833989s ease;
+  transition: all 1.61833989s ease;
+  opacity: 0
+}
+
+.active-bg {
+  opacity: 1
+}
+
+.img1 {
+  background-image: url(<%= image_url('blc_1.jpg') %>);
+  background-position: 0 39%;
+}
+
+.img2 {
+  background-image: url(<%= image_url('la_cueva_2.jpg') %>);
+}
+
+.img3 {
+  background-image: url(<%= image_url('navijazz.jpg') %>);
+}
+
+.img4 {
+  background-image: url(<%= image_url('la_cueva_5.jpg') %>);
+}

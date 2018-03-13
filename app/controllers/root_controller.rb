@@ -8,7 +8,7 @@ class RootController < ApplicationController
       google_plus: 'https://plus.google.com/u/0/113955679218936974599',
       github: 'https://github.com/hepu',
       instagram: 'https://www.instagram.com/hansgamarra',
-      the_crankers: 'http://thecrankersband.com'
+      los_crankers: 'http://loscrankers.com'
     }
   end
 end
