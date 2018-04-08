@@ -29,16 +29,29 @@
 .img1 {
   background-image: url(<%= image_url('blc_1.jpg') %>);
   background-position: 0 39%;
+  @media all and (max-width: 1100px) {
+    background-position: 21% 39%;
+    background-size: 161%;
+  }
 }
 
 .img2 {
   background-image: url(<%= image_url('la_cueva_2.jpg') %>);
+  @media all and (max-width: 1100px) {
+    background-position: 50% 0;
+  }
 }
 
 .img3 {
   background-image: url(<%= image_url('navijazz.jpg') %>);
+  @media all and (max-width: 1100px) {
+    background-position: 16% 0;
+  }
 }
 
 .img4 {
   background-image: url(<%= image_url('la_cueva_5.jpg') %>);
+  @media all and (max-width: 1100px) {
+    background-position: 55% 0;
+  }
 }
