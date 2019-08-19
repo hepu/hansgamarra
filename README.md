@@ -1,2 +1,3 @@
-# hansgamarra
-Personal webpage: http://hansgamarra.com
+# Hans Gamarra
+
+Personal website
