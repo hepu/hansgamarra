@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Basic
-gem 'puma', '2.15.3'
+gem 'puma', '3.12.3'
 gem 'rails', '4.2.5'
 
 # Database
