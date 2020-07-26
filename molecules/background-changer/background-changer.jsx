@@ -22,17 +22,31 @@ const BackgroundChanger = () => {
   }, [])
 
   const nextArrayIndex = (array, index) => {
-    let nexIndex = index + 1
+    let nextIndex = index + 1
 
-    if (nexIndex >= array.length) {
-      nexIndex = 0
+    if (nextIndex >= array.length) {
+      nextIndex = 0
     }
 
-    return nexIndex
+    return nextIndex
+  }
+
+  const previousArrayIndex = (array, index) => {
+    let previousIndex = index - 1
+
+    if (previousIndex <= -1) {
+      previousIndex = array.length - 1
+    }
+
+    return previousIndex
   }
 
   const nextBgIndex = index => {
     return nextArrayIndex(BACKGROUND_URLS, index)
+  }
+
+  const previousBgIndex = index => {
+    return previousArrayIndex(BACKGROUND_URLS, index)
   }
 
   const rollNextImage = () => {
@@ -49,7 +63,9 @@ const BackgroundChanger = () => {
             key={`image-${i.toString()}`}
             active={currentImageIndex === i}
             hide={
-              currentImageIndex !== i && currentImageIndex - 1 !== i && nextBgIndex(currentImageIndex) !== i
+              currentImageIndex !== i &&
+              previousBgIndex(currentImageIndex) !== i &&
+              nextBgIndex(currentImageIndex) !== i
             }
             url={imageUrl}
           />
