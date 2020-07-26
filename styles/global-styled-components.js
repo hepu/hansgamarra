@@ -147,7 +147,7 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/static/fonts/LexendDeca/LexendDeca.woff2) format('woff2');
+    src: url(/fonts/LexendDeca/LexendDeca.woff2) format('woff2');
   }
   
   html, body {
