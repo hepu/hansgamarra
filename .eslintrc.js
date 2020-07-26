@@ -1,34 +1,37 @@
 module.exports = {
   env: {
     browser: true,
-    es6: true,
+    es2020: true
   },
-  extends: ['airbnb', 'prettier', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended'
+
+    // "plugin:@typescript-eslint/eslint-recommended",
+    // "plugin:@typescript-eslint/recommended"
+  ],
   globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    require: 'readonly',
+    process: 'readonly'
   },
+  // "parser": "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
-    ecmaVersion: 2018,
-    sourceType: 'module',
+    ecmaVersion: 11,
+    sourceType: 'module'
   },
-  plugins: ['react', 'prettier'],
+  plugins: [
+    'react'
+    // "@typescript-eslint"
+  ],
   rules: {
-    'import/prefer-default-export': 0,
-    'max-len': [
-      'error',
-      {
-        code: 80,
-        ignoreComments: true,
-        ignoreUrls: true,
-        ignoreTrailingComments: true,
-      },
-    ],
-    'react/jsx-filename-extension': 1,
-    'react/jsx-props-no-spreading': 0,
-    'prettier/prettier': 'error',
-  },
-};
+    'no-console': 'warn',
+    'no-unused-vars': 'warn',
+    'react/display-name': 'off',
+    'react/prop-types': 'warn',
+    'multiline-comment-style': ['warn', 'separate-lines'],
+    'capitalized-comments': ['off', 'never']
+  }
+}
