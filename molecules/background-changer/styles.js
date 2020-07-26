@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const BackgroundChangerContainer = styled.div`
-  height: calc(100vh - 54px);
+  height: 100vh;
   position: relative;
 `
 
