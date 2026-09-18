@@ -15,7 +15,7 @@ export function Hero() {
     >
       <div className="pointer-events-none absolute inset-0 opacity-30 dark:opacity-20">
         <Image
-          src="/images/hans-koombea.jpg"
+          src="/images/bg_hero.jpg"
           alt=""
           fill
           className="object-cover object-center"
