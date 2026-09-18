@@ -139,7 +139,7 @@ export default function Home() {
               </span>
               <a
                 href={siteConfig.resumePath}
-                download
+                download={siteConfig.resumeDownloadName}
                 className="text-[var(--accent)] underline-offset-4 hover:underline"
               >
                 Download PDF

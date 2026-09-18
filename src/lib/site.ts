@@ -10,7 +10,8 @@ export const siteConfig = {
     github: "https://github.com/hepu",
     linkedin: "https://www.linkedin.com/in/hans-gamarra",
   },
-  resumePath: "/resume/hans-gamarra-resume.pdf",
+  resumePath: "/resume/Hans%20Gamarra%20-%20Resume.pdf",
+  resumeDownloadName: "Hans Gamarra - Resume.pdf",
 } as const;
 
 export type Project = {

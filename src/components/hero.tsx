@@ -44,7 +44,11 @@ export function Hero() {
           <a className={primaryCtaClass} href={`mailto:${siteConfig.email}`}>
             Email {siteConfig.email}
           </a>
-          <a className={ctaClass} href={siteConfig.resumePath} download>
+          <a
+            className={ctaClass}
+            href={siteConfig.resumePath}
+            download={siteConfig.resumeDownloadName}
+          >
             Download résumé (PDF)
           </a>
           <a
