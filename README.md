@@ -46,3 +46,5 @@ No special environment variables are required for the static marketing site.
 - `src/app/page.tsx` — single-page portfolio sections
 - `src/app/work/[slug]/page.tsx` — optional case study pages
 - `src/lib/site.ts` — copy, projects, experience, and links
+
+<!-- test: verificar notificaciones Vercel → Slack -->
