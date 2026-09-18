@@ -22,7 +22,7 @@ npm start
 
 The download link points to:
 
-`public/resume/hans-gamarra-resume.pdf`
+`public/resume/Hans Gamarra - Resume.pdf`
 
 Replace that file with your latest résumé (keep the same filename) or update `resumePath` in `src/lib/site.ts`.
 
